@@ -1,0 +1,26 @@
+<div class="container">
+<div class="allElaborations-ekspert">
+    {{# each items }}
+        <div class="singleElaboration">
+            <p>Tytuł: {{ this.ksiazka.tytul }}</p>
+            <div class="singleElaboration-btns">
+                <a name="modify{{ this.id_opracowania }}" class="cta" href="/elaborations/update/{{ this.id_opracowania }}"><button class="btn">Modyfikuj</button></a>
+            </div>
+        </div>
+    {{/each}}
+</div>
+<div class="allElaborations-user-search">
+    <p>Wyszukaj</p></br>
+    <form method="POST" action="searchElaborations">
+        <label>Tytuł:</label></br>
+        <input type="text" name="title"></br>
+        <label>Szkoła:</label></br>
+        <select name="schoolType" id="school-type-search">
+            <option></option>
+            <option>SP</option>
+            <option>LICEUM</option>
+        </select>
+        <input type="submit" value="Szukaj">
+    </form>
+</div>
+</div>

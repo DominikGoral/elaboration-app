@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="elaborationDescr">
+        <p>Tytuł: {{ item.ksiazka.tytul }} </p>
+        <p id="geneza-powstania">Geneza powstania: {{ item.genezaPows }} </p>
+        <p id="plan-wydarzen">Plan wydarzeń:</br>
+            {{ item.planWydarzen }}
+        </p>
+        <p id="streszcznie">Streszczenie:</br>
+            {{ item.streszczenie }}
+        </p>
+        <p id="streszczenie-szcz">Streszczenie szczegółowe:</br>
+            {{ item.streszczenieSzcz }}
+        </p>
+        <p id="charakterystyka">Charakterystyka:</br>
+            {{ item.charakterystyka }}
+        </p>
+    </div>
+    <div class="elaboration-shortcuts">
+        <a href="#geneza-powstania">Geneza powstania</a>
+        <a href="#plan-wydarzen">Plan wydarzeń</a>
+        <a href="#streszcznie">Streszczenie</a>
+        <a href="#streszczenie-szcz">Streszczenie szczegółowe</a>
+        <a href="#charakterystyka">Charakterystyka</a>
+    </div>
+</div>

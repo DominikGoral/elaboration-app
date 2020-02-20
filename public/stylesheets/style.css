@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "IM Fell Great Primer SC";
+    font-size: 16px;
+}
+
+li, a, button {
+    font-size: 100%;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+body {
+    
+    background-image: url('images/ksiazki.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+    height: 60px;
+    background-color: black;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: red;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  width: 90%;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 60%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.mainblock-index {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.btn-login-sign-up {
+    margin-top: 2vh;
+}
+
+.login-container,
+.register-container {
+    position: absolute;
+    width:20%;
+    left: 40%;
+    top: 20vh;
+    background-color: #d1be80;
+    box-shadow: 10px 10px 40px 8px rgba(0,0,0,0.8);
+    border-radius: 5%;
+    padding: 10px 20px;
+}
+
+.myLibrary-books,
+.allElaborations-user,
+.allElaborations-ekspert
+{
+    background-color: rgb(209, 205, 205);
+    margin-top: 10vh;
+    margin-left: 10%;
+    float: left;
+    width: 60%;
+}
+
+.myLibrary-control-panel,
+.allElaborations-user-search {
+    padding: 2vh;
+    background-color: rgb(209, 205, 205);
+    margin-right: 10%;
+    margin-top: 10vh;
+    float: right;
+    width: 20%;
+}
+
+.allElaborations-user-search p {
+    font-size: 200%;
+}
+.singleBook,
+.singleElaboration {
+    padding: 1vh;
+    width: 98%;
+    margin: 1vh 1%;
+    background-color: rgb(247, 238, 238);
+}
+
+.singleElaboration-btns {
+    margin-left: 64%;
+}
+
+#school-type-search {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    width: 90%;
+    height: 36px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.elaborationDescr {
+    background-color: rgb(247, 238, 238);
+    width: 70%;
+    margin-left: 10%;
+    float: left;
+}
+
+.elaboration-shortcuts {
+    width: 10%;
+    margin-right: 10%;
+    background-color: rgb(209, 205, 205);
+    float: right;
+}
+.elaboration-shortcuts a {
+    color: black
+}
+
+.books-to-do {
+    background-color: rgb(160, 160, 160);
+    margin-top: 10vh;
+    margin-left: 10%;
+    float: left;
+    width: 80%;
+}
+
+.singleBook-btns {
+    margin-left: 84%;
+}
+
+.createElaboration-form-container {
+    padding-left: 3%;
+    padding-bottom: 1vh;
+    float: left;
+    background-color: rgb(209, 205, 205);
+    margin-top: 10vh;
+    margin-left: 20%;
+    width: 60%;
+}
+.createElaboration-form-container label {
+    font-size: 200%;
+}

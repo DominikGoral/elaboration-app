@@ -1,0 +1,11 @@
+<div class="books-to-do">
+    {{# each items }}
+        <div class="singleBook">
+            <p>Tytuł: {{ this.ksiazka.tytul }}</p>
+            <p>Autor: {{ this.autor.imie }} {{ this.autor.nazwisko }}</p>
+            <div class="singleBook-btns">
+                <a name="create{{this.ksiazka.id_ksiazki}}" class="cta" href="/elaborations/create/{{ this.ksiazka.id_ksiazki }}"><button class="btn">Opracowuj</button></a>
+            </div>  
+        </div>
+    {{/each}}
+</div>

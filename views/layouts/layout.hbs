@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="/">Strona główna</a></li>
+          {{#if userLoggedIn}}
+          <li><a name="mylibrary" href="/mylibrary/all">Moja biblioteka</a></li>
+          <li><a href="/elaborations/all">Opracowania</a></li>
+          {{/if}}
+          {{#if expertLoggedIn}}
+          <li><a name="create" href="/elaborations/create">Twórz opracowania</a></li>
+          <li><a href="/elaborations/update">Opracowania</a></li>
+          {{/if}}
+          <li><a href="">{{ firstName }} {{ surname }}</a></li>
+        </ul>
+      </nav>
+      {{#if userLoggedIn}}
+      <a class="cta" href="/logout"><button class="btn">Wyloguj</button></a>
+      {{/if}}
+      {{#if expertLoggedIn}}
+      <a class="cta" href="/logout"><button class="btn">Wyloguj</button></a>
+      {{/if}}
+    </header>
+    
+      {{{ body }}} 
+    
+  </body>
+</html>

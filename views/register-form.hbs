@@ -1,0 +1,27 @@
+<div class="register-container">
+    <form method="post" action="/register">
+        <label>Imie:</label>
+        <input type="text" name="firstname" required>
+        <label>Nazwisko:</label>
+        <input type="text" name="surname" required>
+        <label>Data urodzenia:</label></br>
+        <input type="date" name="dataOfBirth" min="1900-01-01" max="2020-12-31"></br>
+        <label>Szkoła:</label></br>
+        <select name="school">
+            <option>SP</option>
+            <option>LICEUM</option>
+        </select></br>
+        <label>Login:</label>
+        <input type="text" name="username" required>
+        <label>Hasło:</label>
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{8,20}" required>
+        <label>Powtórz hasło:</label>
+        <input type="password" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{8,20}" required>
+        <label>Typ:</label>
+        <select name="type" required>
+            <option>uczen</option>
+            <option>ekspert</option>
+        </select>
+        <input type="submit" value="register">
+    </form>
+</div>

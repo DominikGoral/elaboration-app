@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="myLibrary-books">
+        {{# each items }}
+            <div class="singleElaboration">
+                <p>Tytuł: {{ this.opracowanie.ksiazka.tytul }}</p>
+                <div class="singleElaboration-btns">
+                    <a name="details{{ this.id_opracowania }}" class="cta" href="/elaborations/all/{{ this.id_opracowania }}"><button class="btn">Szczegóły</button></a>
+                    <a name="delete{{ this.id_opracowania }}" class="cta" href="/mylibrary/delete/{{ this.id_opracowania }}"><button class="btn">Usuń</button></a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <div class="myLibrary-control-panel">
+        <a name="add" class="cta" href="/elaborations/all"><button class="btn">Dodaj</button></a>
+    </div>
+</div>

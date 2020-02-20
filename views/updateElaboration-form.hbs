@@ -1,0 +1,19 @@
+<div class="container">
+<div class="createElaboration-form-container">
+    <form method="POST" action="updateElaboration">
+        <label>Geneza powstania:</label></br>
+        <textarea name="genesis" rows="10" cols="110">{{ item.genezaPows }}</textarea></br>
+        <label>Plan wydarzeń:</label></br>
+        <textarea name="plan" rows="10" cols="110">{{ item.planWydarzen }}</textarea></br>
+        <label>Streszczenie:</label></br>
+        <textarea name="summary" rows="10" cols="110">{{ item.streszczenie }}</textarea></br>
+        <label>Streszczenie szczegółowe:</label></br>
+        <textarea name="extraSummary" rows="10" cols="110">{{ item.streszczenieSzcz }}</textarea></br>
+        <label>Charakterystyka:</label></br>
+        <textarea name="characteristic" rows="10" cols="110">{{ item.charakterystyka }}</textarea></br>
+        <label>Możesz umieścić krótki komentarz o dokonanych zmianach</label></br>
+        <textarea name="change" rows="10" cols="110"></textarea></br>
+        <input type="submit" value="Zatwierdź zmiany">
+    </form>
+</div>
+</div>
